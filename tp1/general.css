@@ -224,8 +224,8 @@ ul.tags li a {
         height: 515px;
     }
     .region-top .article-left div{
-        top: 50%;
-        left: 30%;
+        top: 200px;
+        left: 80px;
         width: 300px;
     }
     .region-top .article-right{
