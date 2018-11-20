@@ -1,0 +1,191 @@
+@font-face {
+    font-family: Bernina;
+    src: url("font/BerninaSans-Web-CondensedBold.woff2");
+}
+
+* {
+    margin: 0;
+    font-family: Bernina;
+}
+
+i{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    color: #fff;
+}
+
+img{
+    width: 100%;
+}
+
+.page{
+    background: url("img/lauzanne_img.jpg") no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+
+.head{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5) ;
+}
+
+.logo{
+    width: 100px;
+}
+
+.head-icon{
+    color: #fff;
+}
+
+.head-icon:hover{
+    color: #222222;
+}
+
+.meteo{
+    display: none;
+    color: #fff;
+}
+
+.meteo i{
+    border-right: 2px #fff solid;
+    margin: 0 5px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 350px auto 0 auto;
+}
+
+.social-media{
+    display: none;
+}
+
+.menu{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px #999999 solid;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.menu > a{
+    color: #fff;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.menu:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+@media all and (min-width: 768px) {
+    .page{
+        height: 900px;
+    }
+    .head-icon{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .meteo{
+        display: flex;
+    }
+    .logo{
+        width: 200px;
+    }
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    .network{
+        display: flex;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #2682C2;
+    }
+
+    .network:hover{
+        background-color: #10435F;
+        width: 150px;
+    }
+
+    .network > a{
+        width: 100%;
+    }
+
+    .facebook:after .twitter:after .instagram:after .pinterest:after .youtube:after .linkedin:after{
+        content: "";
+    }
+
+    .facebook:hover:after{
+        content: 'Facebook';
+        color: #fff;
+        margin-left: 20px;
+        font-family: Bernina;
+    }
+    .twitter:hover:after{
+        content: 'Twitter';
+        color: #fff;
+        margin-left: 20px;
+        font-family: Bernina;
+
+    }
+    .instagram:hover:after{
+        content: 'Instagram';
+        color: #fff;
+        margin-left: 20px;
+        font-family: Bernina;
+
+    }
+    .pinterest:hover:after{
+        content: 'Pinterest';
+        color: #fff;
+        margin-left: 20px;
+        font-family: Bernina;
+
+    }
+    .youtube:hover:after{
+        content: 'YouTube';
+        color: #fff;
+        margin-left: 20px;
+        font-family: Bernina;
+
+    }
+    .linkedin:hover:after{
+        content: 'Linkedin';
+        color: #fff;
+        margin-left: 20px;
+        font-family: Bernina;
+
+    }
+
+
+    .network-icon{
+        color: #fff;
+    }
+    .navbar{
+        flex-direction: row;
+        width: 80%;
+        margin: 298px auto 0 auto;
+    }
+
+
+}
