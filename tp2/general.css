@@ -3,6 +3,7 @@
     src: url("font/BerninaSans-Web-CondensedBold.woff2");
 }
 
+/*CSS Reset*/
 * {
     margin: 0;
     font-family: Bernina;
@@ -74,6 +75,72 @@ img{
     display: none;
 }
 
+.network{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #2682C2;
+}
+
+.network:hover{
+    background-color: #10435F;
+    width: 150px;
+}
+
+.network > a{
+    width: 100%;
+}
+
+.facebook:after .twitter:after .instagram:after .pinterest:after .youtube:after .linkedin:after{
+    content: "";
+}
+
+/**Affichage du nom des Réseau sociaux**/
+.facebook:hover:after{
+    content: 'Facebook';
+    color: #fff;
+    margin-left: 20px;
+    font-family: Bernina;
+}
+
+.twitter:hover:after{
+    content: 'Twitter';
+    color: #fff;
+    margin-left: 20px;
+    font-family: Bernina;
+
+}
+
+.instagram:hover:after{
+    content: 'Instagram';
+    color: #fff;
+    margin-left: 20px;
+    font-family: Bernina;
+
+}
+
+.pinterest:hover:after{
+    content: 'Pinterest';
+    color: #fff;
+    margin-left: 20px;
+    font-family: Bernina;
+}
+
+.youtube:hover:after{
+    content: 'YouTube';
+    color: #fff;
+    margin-left: 20px;
+    font-family: Bernina;
+}
+
+.linkedin:hover:after{
+    content: 'Linkedin';
+    color: #fff;
+    margin-left: 20px;
+    font-family: Bernina;
+}
+
 .menu{
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px #999999 solid;
@@ -95,97 +162,38 @@ img{
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+/********Breakpoint; 768px - Tablet - ********/
 @media all and (min-width: 768px) {
     .page{
         height: 900px;
     }
+
     .head-icon{
         display: flex;
         justify-content: flex-start;
     }
+
     .meteo{
         display: flex;
     }
+
     .logo{
         width: 200px;
     }
+
     .social-media {
         display: flex;
         flex-direction: column;
         margin-top: 150px;
     }
-    .network{
-        display: flex;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        background-color: #2682C2;
-    }
-
-    .network:hover{
-        background-color: #10435F;
-        width: 150px;
-    }
-
-    .network > a{
-        width: 100%;
-    }
-
-    .facebook:after .twitter:after .instagram:after .pinterest:after .youtube:after .linkedin:after{
-        content: "";
-    }
-
-    .facebook:hover:after{
-        content: 'Facebook';
-        color: #fff;
-        margin-left: 20px;
-        font-family: Bernina;
-    }
-    .twitter:hover:after{
-        content: 'Twitter';
-        color: #fff;
-        margin-left: 20px;
-        font-family: Bernina;
-
-    }
-    .instagram:hover:after{
-        content: 'Instagram';
-        color: #fff;
-        margin-left: 20px;
-        font-family: Bernina;
-
-    }
-    .pinterest:hover:after{
-        content: 'Pinterest';
-        color: #fff;
-        margin-left: 20px;
-        font-family: Bernina;
-
-    }
-    .youtube:hover:after{
-        content: 'YouTube';
-        color: #fff;
-        margin-left: 20px;
-        font-family: Bernina;
-
-    }
-    .linkedin:hover:after{
-        content: 'Linkedin';
-        color: #fff;
-        margin-left: 20px;
-        font-family: Bernina;
-
-    }
-
 
     .network-icon{
         color: #fff;
     }
+    
     .navbar{
         flex-direction: row;
         width: 80%;
         margin: 298px auto 0 auto;
     }
-
-
 }
