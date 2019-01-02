@@ -1,0 +1,164 @@
+img{
+    width: 100%;
+}
+
+.header{
+    margin: 0;
+    max-width: 100%;
+    background: url("img/background.jpg") no-repeat center;
+    background-size: cover;
+}
+.row {
+    padding: 50px 0 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.first-col{
+    padding-left: 50px;
+}
+
+.logo{
+    width: 200px;
+}
+
+.phone{
+    width: 100%;
+}
+
+.text{
+    margin: 50px 0;
+    color: white;
+    font-size: 20px;
+    width: 65%;
+}
+
+.buttons_group {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button{
+    margin: 20px 0;
+}
+
+
+
+.form_text{
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
+
+.input-group{
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.btn{
+    width: 200px;
+    background-color: black;
+    color: white;
+}
+
+.footer{
+    margin: 50px 0 0 0;
+    padding: 0 0 50px;
+    max-width: 100%;
+    background-color: #111111;
+}
+
+.social-media{
+    height: 300px;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.network{
+    display: flex;
+    align-items: center;
+}
+
+.network > a {
+    width: 110px;
+    height: 110px;
+    padding: 10px 0 0 5px;
+    border: 5px solid white;
+    border-radius: 200px;
+}
+
+.network > a {
+    width: 110px;
+    height: 110px;
+    padding: 10px 0 0 5px;
+    border: 5px solid white;
+    border-radius: 200px;
+}
+
+.network > a:hover {
+    border: 5px solid #ff4031;
+}
+
+.network-icon{
+    color: #fff;
+}
+
+.network-icon:hover{
+    color: #ff4031;
+}
+
+.network-icon:before, .network-icon:after {
+    font-size: 50px !important;
+}
+
+.copyright{
+    height: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.copyright > b > span {
+    color: grey !important;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .row {
+        flex-direction: row;
+    }
+    .buttons_group{
+        flex-direction: row;
+    }
+
+    .input-group{
+        width: 500px;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .phone{
+        width: 465px;
+    }
+
+    .row{
+        padding-top: 150px;
+    }
+}
